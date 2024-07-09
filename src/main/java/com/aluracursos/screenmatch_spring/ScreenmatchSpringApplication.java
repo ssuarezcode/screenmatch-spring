@@ -9,23 +9,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ScreenmatchSpringApplication implements CommandLineRunner {
-
-	@Autowired
-	private SerieRepository repository;
+public class ScreenmatchSpringApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ScreenmatchSpringApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-
-		Principal principal = new Principal(repository);
-		principal.muestraElMenu();
-
-//		EjemploStreams ejemploStreams = new EjemploStreams();
-//		ejemploStreams.muestraEjemplo();
-
-	}
 }
+
